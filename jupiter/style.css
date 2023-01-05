@@ -1,0 +1,101 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #736efe; background: -moz-linear-gradient(to right,  #736efe 0%,#5efce8 100%); background: -webkit-linear-gradient(to right,  #736efe 0%,#5efce8 100%); background: linear-gradient(to right,  #736efe 0%,#5efce8 100%);
+}
+
+.circles{
+    width: 270px;
+    height: 470px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.3s ease;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.circle-1{
+    top: -70px;
+    left: -50px;
+    animation: cir1 5s linear infinite;
+}
+
+.circle-2{
+    bottom: -70px;
+    right: -50px;
+}
+
+/* card */
+
+.card{
+    width: 270px;
+    height: 470px;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #ef7464;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in;
+}
+
+.nfc img,
+.logo img,
+.chip img,
+.name,
+.test{
+    position: absolute;
+}
+
+.nfc img{
+    width: 35px;
+    height: auto;
+    top: 25px;
+    left: 25px;
+    
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chip img {
+    width: 55px;
+    height: auto;
+    transform: rotate(90deg);
+    top: 50px;
+    left: 40%;
+
+}
+
+.name {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
